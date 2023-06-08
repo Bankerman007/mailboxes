@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  html, 
+  body {
+      height: 100%;
+  }
+
+</style>
+<body>
+   
+    
+    <div class="card text-center w-100 h-100">
+      
+      <div class="card-header w-100">
+      
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+  
+          </li>
+        </ul>
+      </div>
+      <div class = "content w-100 h-100">
+          
+    </div>
+    <div class="h-100 w-100">
+      <div class="card-body">          
+        <h5 class="card-title">Mailboxes Made Easy</h5>
+        <p class="card-text w-100 h-100">        
+          
+          <a> Coming Soon! </a><br>
+          <a>Sorry for the inconvenience but The Mailboxes Made Easy site is still being built.</a><br>
+          <a>Enter your information below if you would like to be notified once orders can be placed.</a><br><br>
+          
+          <img class="card-img-left w-80" image src= '{% static "mailbox.jpg" %}' alt="image"><a></a></p>
+          <ul class="list-group list-group-flush">
+            {% if submitted %}
+        
+            {% else %}
+        
+                    <form action= "" method ='POST'>
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <input type= "submit" value= "Submit">
+                    </form> 
+        
+            {% endif %}
+          </ul>
+        <br><br><br><br><br>
+
+     </div>
+  </div> 
+    
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+
+</html>
