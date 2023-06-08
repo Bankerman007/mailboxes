@@ -1,2 +1,2 @@
-web: gunicorn roster.wsgi
+web: gunicorn fixmailbox.wsgi
 release: python3 manage.py migrate
