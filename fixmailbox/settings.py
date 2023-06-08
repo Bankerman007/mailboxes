@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h0auyc*4rn2&wlnm$!uy+pmm@eh)vz!c+x7%9r2^vah8o#=u!e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1","mailboxes.justdev.us"]
 
